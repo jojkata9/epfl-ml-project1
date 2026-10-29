@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "lambda": 0.001,
+  "training_rows": 262508,
+  "validation_rows": 65627,
+  "test_rows": 109379,
+  "original_features": 321,
+  "validation_retained_features": 315,
+  "positive_fraction": 0.08830207079403295,
+  "always_negative": {
+    "accuracy": 0.9112408002803724,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "ridge_threshold_0.5": {
+    "accuracy": 0.9118350678836454,
+    "precision": 0.819672131147541,
+    "recall": 0.008583690987124463,
+    "f1": 0.016989466530750934
+  },
+  "selected_threshold": 0.22000000000000003,
+  "ridge_selected_threshold": {
+    "accuracy": 0.8702210980236793,
+    "precision": 0.34546498277841564,
+    "recall": 0.5165665236051502,
+    "f1": 0.41403508771929826
+  },
+  "final_retained_features": 315
+}
