@@ -26,14 +26,14 @@ The labeled dataset has 328,135 examples, 109,379 examples of the test set and 3
 The goal of this work is to provide a clear and easily reproducible baseline. We rely on no outside data, no feature interaction and no search through models.
 
 \section{Preprocessing}
-We begin by separating row identifiers from features and verifying that training
-feature IDs align with label IDs. Identifiers are kept for the submission but
-excluded from the predictors. Empty and non-finite feature values are regarded
-as missing.
+The preprocessing pipeline starts by splitting the identifier from the features and ensuring
+that training feature identifiers match label identifiers. Ids are retained for the
+submission while not used in the predictors. Features having empty or non-finite
+values are considered missing.
 
-During validation, all preprocessing statistics are estimated from the training
-partition alone, so that validation rows do not influence model fitting. The
-procedure is:
+In validation, all the preprocessing statistics are computed on the training set
+alone without any influence of the validation set on the model building process.
+The steps followed include:
 \begin{enumerate}
 \item Drop columns with no finite training value.
 \item Impute missing entries with the median of the column's finite training values.
